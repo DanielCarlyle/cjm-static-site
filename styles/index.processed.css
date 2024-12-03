@@ -411,7 +411,7 @@ section {
 
 .img-wrapper {
     filter: drop-shadow(-2px 1px 6px #000);
-    padding: 0 28px 11px 11px
+    padding: 0 28px 37px 11px
 }
 
 div#masonry {
@@ -486,6 +486,10 @@ div#masonry {
     .intro-copy-mobile {
         display: none
     }
+}
+
+.bio-section__copy {
+    font-size: 1.5em
 }
 
 .form-control {
