@@ -6,6 +6,82 @@
 */
 (function() {
   "use strict";
+   
+   
+   
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $('.grid-item img').addClass('lazy');
+  $('.grid-item img.lazy').lazyLoadXT({
+        effect: 'fadeIn',
+        srcAttr: 'data-src'
+  });
+});
+
+$('#gallery').lightGallery({
+  selector: '.grid-item',
+  keyPress: false,
+  controls: false,
+  counter: false,
+  thumbnail: false,
+  mousewheel: false,
+  enableSwipe: false,
+  autoplay: false,
+  autoplayControls: false
+});
+
+$.lazyLoadXT.autoInit=false;
+
+$.lazyLoadXT.onload = function(){
+  $(this).removeClass('lazy');
+  $grid.masonry({
+    itemSelector: '.grid-item',
+    horizontalOrder: true,
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+};
+
+$('.filter-button-group').each( function(i, buttonGroup) {
+  var $buttonGroup = $(buttonGroup);
+  
+  $buttonGroup.on('click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $(this).addClass('is-checked');
+
+    var $filterValue = $(this).attr('data-filter');
+    if ($filterValue == '*'){
+      $('.photos').addClass('grid-item');
+      $('.photos').css('display', '');
+      $('.grid-item').removeClass('photos');
+      
+    }
+    else{
+      $('.grid-item').not($filterValue).css('display', 'none');
+      $('.grid-item').not($filterValue).addClass('photos');
+      $('.photos').removeClass('grid-item')
+      
+      $($filterValue).css('display', '');
+      $($filterValue).addClass('grid-item');
+      $($filterValue).removeClass('photos');
+    }
+    
+    $grid.masonry({
+      itemSelector: '.grid-item',
+      horizontalOrder: true,
+      percentPosition: true,
+      columnWidth: '.grid-sizer',
+      autoplayControls: false,
+      autoplay: false,
+      progressBar: false
+    });
+  });
+});
+
+
+
+   
+   
 
   /**
    * Easy selector helper function
