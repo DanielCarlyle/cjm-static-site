@@ -96,9 +96,20 @@ a:focus {
     }
 }
 
+.logo-subtitle-two {
+    display: block;
+    color: #202020;
+    text-transform: capitalize;
+    font-size: 1em;
+    margin-top: 5px;
+    z-index: 100;
+    font-family: Rubik, Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 15px;
+    font-weight: 400
+}
+
 .span-logo-text {
-    background-color: #0bc9f0;
-    background-image: linear-gradient(75deg, #83d0cf, #0e0f10);
+    background-color: #1a1d1d;
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -378,6 +389,7 @@ a:focus {
 @media (min-width:768px) {
     #hero {
         background: #f1f2f5;
+        background-image: url(https://assets.codepen.io/902426/testbg.jpg);
         background-size: cover
     }
 }
@@ -411,7 +423,7 @@ section {
 
 .img-wrapper {
     filter: drop-shadow(-2px 1px 6px #000);
-    padding: 0 28px 37px 11px
+    padding: 0 28px 11px 11px
 }
 
 div#masonry {
@@ -822,4 +834,123 @@ img {
     transition: all .3s ease;
     background: 0 0;
     padding: inherit
+}
+
+.grid:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.grid-item,
+.grid-sizer {
+    width: 33.333%;
+    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem !important;
+    padding-left: .5rem !important;
+    padding-right: .5rem !important
+}
+
+.container-full {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.overlay:hover .img-fluid {
+    opacity: .3
+}
+
+.overlay:hover .txt-overlay {
+    opacity: 1
+}
+
+.txt-overlay {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center
+}
+
+@media (max-width:575px) {
+
+    .grid-item,
+    .grid-sizer {
+        width: 100%
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    .grid-item,
+    .grid-sizer {
+        width: 50%
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .grid-item,
+    .grid-sizer {
+        width: 33.333%
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .grid-item,
+    .grid-sizer {
+        width: 25%
+    }
+}
+
+@media (min-width:1200px) {
+
+    .grid-item,
+    .grid-sizer {
+        width: 20%
+    }
+}
+
+.grid-item {
+    float: left
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%
+}
+
+.btn-gallery {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    color: #000;
+    border-color: #000;
+    border: 2px solid;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px 20px 10px 20px
+}
+
+.btn-gallery.is-checked,
+.btn-gallery:active,
+.btn-gallery:focus,
+.btn-gallery:hover {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: 0;
+    box-shadow: none
+}
+
+.lg-backdrop {
+    opacity: .75 !important
+}
+
+video.video-main {
+    width: 50%
 }
