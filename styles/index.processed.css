@@ -383,13 +383,14 @@ a:focus {
 #hero {
     width: 100%;
     height: 100vh;
-    background: #f2f9f8
+    background: #f2f9f8;
+    background-image: url(https://assets.codepen.io/902426/Chris-Malanchen-Website-Background-Image-Mobile.png)
 }
 
 @media (min-width:768px) {
     #hero {
         background: #f1f2f5;
-        background-image: url(https://assets.codepen.io/902426/testbg.jpg);
+        background-image: url(https://assets.codepen.io/902426/Chris-Malanchen-Website-Background-Image-Desktop-Landing-Page-Image.webp);
         background-size: cover
     }
 }
