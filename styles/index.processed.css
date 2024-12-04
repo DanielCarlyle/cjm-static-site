@@ -32,6 +32,19 @@ a:focus {
     text-decoration: none !important
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 10px 8px;
+    color: #151414;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal
+}
+
 #header {
     transition: all .5s;
     z-index: 997;
