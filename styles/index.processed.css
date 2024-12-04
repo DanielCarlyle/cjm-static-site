@@ -38,7 +38,6 @@ h3,
 h4,
 h5,
 h6 {
-    padding: 10px 8px;
     color: #151414;
     text-transform: uppercase;
     font-family: "Bebas Neue", sans-serif;
@@ -51,6 +50,27 @@ h6 {
     h2 {
         font-size: 3rem
     }
+}
+
+.fa-5x {
+    font-size: 3em !important
+}
+
+a {
+    text-decoration: underline;
+    color: #fff
+}
+
+a:hover {
+    text-decoration: none
+}
+
+p>strong {
+    font-size: 1.3em
+}
+
+h2 {
+    font-weight: 400
 }
 
 #header {
@@ -681,28 +701,6 @@ footer {
     text-align: center;
     padding-top: 48px;
     padding-bottom: 55px
-}
-
-.fa-5x {
-    font-size: 3em !important
-}
-
-a {
-    text-decoration: underline;
-    color: #fff
-}
-
-a:hover {
-    text-decoration: none
-}
-
-p>strong {
-    font-size: 1.3em
-}
-
-h2 {
-    font-weight: 400;
-    margin-bottom: 15px
 }
 
 .social-icons li {
