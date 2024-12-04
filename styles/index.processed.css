@@ -427,6 +427,12 @@ section {
     padding: 0 28px 11px 11px
 }
 
+.grid-item-img {
+    width: 100%;
+    height: auto;
+    displat: block
+}
+
 div#masonry {
     font-size: 0;
     max-width: 8
