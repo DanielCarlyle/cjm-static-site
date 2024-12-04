@@ -52,14 +52,22 @@
       rel="stylesheet">
 
    <!-- Google Tag Manager -->
-   <script>(function (w, d, s, l, i) {
-         w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-               new Date().getTime(), event: 'gtm.js'
-         }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-KLKWNG9Z');</script>
+   <script>
+      (function (w, d, s, l, i) {
+         w[l] = w[l] || [];
+         w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+         });
+         var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+         j.async = true;
+         j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+         f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KLKWNG9Z');
+   </script>
    <!-- End Google Tag Manager -->
    <!-- End Google Tag Manager -->
 
@@ -89,7 +97,7 @@
                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                <li><a class="nav-link scrollto" href="#reel">Reel</a></li>
                <li><a class="nav-link scrollto" href="#portfolio">Work</a></li>
-               <li><a class="nav-link scrollto" href="#graphic">Graphic Work &amp; Directing</a></li>
+               <li><a class="nav-link scrollto" href="#graphic">Directing</a></li>
                <li><a class="nav-link scrollto" href="#about">About</a></li>
                <li><a class="nav-link scrollto" href="#contact-form">Contact</a></li>
                <li><a class="nav-link mx-4 p-md-0 social-nav-icons"
@@ -178,8 +186,8 @@
 
    <section id="portfolio" class="portfolio">
 
-      <div class="container-fluid pt-5 mt-5 container-full" style="max-width=100%">
-         <div id="filter-buttons" class="filter-button-group justify-content-center" style="text-align: center;">
+      <div class="container pt-5 mt-5 container-full" style="max-width=100%">
+         <div id="filter-buttons" class="filter-button-group justify-content-center" style="text-align: left;">
             <button type="button" id="btn-all" class="btn-gallery btn is-checked" data-filter="*">All</button>
             <button type="button" id="btn-film" class="btn-gallery btn" data-filter=".film">Scripted</button>
             <button type="button" id="btn-documentary" class="btn-gallery btn"
@@ -405,37 +413,41 @@
 
    <section id="graphic" class="graphic">
 
-      <div class="container-fluid">
-         <div class="row">
+      <div class="container">
+
+         <div class="row mb-5">
 
             <!--<div class="vimeo-video-container"> -->
-            <h2 class="text-center pt-4 mb-2">Directing Work</h2>
+            <h2 class="text-left pt-4 mb-2">Short Films</h2>
 
             <div class="col-md-4">
                <div class="embed  embed-16by9">
-                  <div class="embed-vimeo" data-id="245558732" data-start-at="120" id="embed1"></div>
+                  <div class="embed-vimeo" data-id="245556328" id="embed1"></div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="embed  embed-16by9">
+                  <div class="embed-vimeo" data-id="245558732" data-start-at="120" id="embed2"></div>
                </div>
             </div>
             <div class="col-md-4">
                <div class="embed  embed-16by9">
-                  <div class="embed-vimeo" data-id="245555640" id="embed2"></div>
+                  <div class="embed-vimeo" data-id="245555640" id="embed3"></div>
                </div>
             </div>
             <div class="col-md-4">
                <div class="embed  embed-16by9">
-                  <div class="embed-vimeo" data-id="18862374" id="embed3"></div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="embed  embed-16by9">
-                  <div class="embed-vimeo" data-id="245556328" id="embed4"></div>
+                  <div class="embed-vimeo" data-id="18862374" id="embed4"></div>
                </div>
             </div>
          </div>
 
+
+
          <div class="row">
 
-            <h2 class="text-center pt-4 mb-2">Music Videos</h2>
+            <h2 class="text-left pt-4 mb-2">Music Videos</h2>
             <div class="col-md-4">
                <div class="embed  embed-16by9">
                   <div class="embed-vimeo" data-id="258737431" id="embed5"></div>
@@ -451,14 +463,52 @@
                   <div class="embed-vimeo" data-id="259272943" id="embed7"></div>
                </div>
             </div>
+
+            <div class="col-md-4">
+               <div class="embed  embed-16by9">
+                  <div class="embed-vimeo" data-id="847046692" id="embed8"></div>
+               </div>
+            </div>
+
+
          </div>
 
-      </div>
-      <!--</div> -->
+         <div class="row mb-5">
+
+            <!--<div class="vimeo-video-container"> -->
+            <h2 class="text-left pt-4 mb-2">Graphic Work</h2>
+
+            <div class="col-md-4">
+               <div class="embed  embed-16by9">
+                  <div class="embed-vimeo" data-id="847035582" id="embed9"></div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <div class="embed  embed-16by9">
+                  <div class="embed-vimeo" data-id="847076794" data-start-at="120" id="embed10"></div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="embed  embed-16by9">
+                  <div class="embed-vimeo" data-id="245558423" id="embed11"></div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="embed  embed-16by9">
+                  <div class="embed-vimeo" data-id="245557437" id="embed12"></div>
+               </div>
+            </div>
+         </div>
+
+
+
+
       </div>
 
    </section>
    <!-- End Video graphic Work Section -->
+
 
    <!--
 
