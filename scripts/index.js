@@ -7,8 +7,32 @@
 (function() {
   "use strict";
    
+
+/* vimeo video code */
    
+var videos = document.getElementsByClassName('embed-vimeo');            // get all of the '.embed-vimeo' items
+
+[].forEach.call(videos, function(element, index, array) {               // loop through each item
+    var id            = element.getAttribute('id'),                     // unique id of the video element
+        videoId       = element.getAttribute('data-id'),                // id of the Vimeo video
+        startAt       = element.getAttribute('data-start-at'),          // time to start at
+        playerOptions = { id : videoId, width : 1280 },                 // options to be passed to the player
+        player        = new Vimeo.Player(id, playerOptions);            // create a new instance of the player
+
+    if (startAt != undefined) {                                         // do we have a "start-at" value?
+        if (!isNaN(parseFloat(startAt)) && isFinite(startAt)) {         // is the "start-at" value numeric?
+            player.on('loaded', function(data) {                        // okay, once the video has loaded...
+                player.setCurrentTime(startAt).then(function(seconds) { // set the "start-at" time, and then...
+                    player.pause();                                     // pause the video
+                });
+            });
+        }
+    }
+});   
    
+ /* end vimeo video code */  
+   
+/* filter portfolio items  code */   
 var $grid = $('.grid').imagesLoaded( function() {
   // init Masonry after all images have loaded
   $('.grid-item img').addClass('lazy');
@@ -79,7 +103,7 @@ $('.filter-button-group').each( function(i, buttonGroup) {
 });
 
 
-
+/* end filter portfolio items  code */   
    
    
 
@@ -366,3 +390,6 @@ $("#return-to-top").click(function () {
       preloader.remove()
     });
   }
+
+                            
+                            
