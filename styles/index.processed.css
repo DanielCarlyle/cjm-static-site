@@ -45,6 +45,14 @@ h6 {
     font-style: normal
 }
 
+@media (min-width:1200px) {
+
+    .h2,
+    h2 {
+        font-size: 3rem
+    }
+}
+
 #header {
     transition: all .5s;
     z-index: 997;
