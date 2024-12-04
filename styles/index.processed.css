@@ -477,16 +477,6 @@ div#masonry {
     cursor: not-allowed
 }
 
-body {
-    margin: 0;
-    padding: 30px
-}
-
-.vimeo-video-container {
-    margin: 0 auto;
-    max-width: 960px
-}
-
 .embed {
     margin: 0 0 30px;
     overflow: hidden;
