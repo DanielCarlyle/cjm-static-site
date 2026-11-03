@@ -1,6 +1,16 @@
 {
   "projects": [
     {
+      "title": "RPM",
+      "category": "documentary",
+      "image": "https://assets.codepen.io/902426/Christopher-Malenchan-Movie_Portfolio-Item-RPM.jpg",
+      "alt": "RPM film or television poster",
+      "description": "",
+      "link": "",
+      "order": 10,
+      "visible": true
+    },
+    {
       "title": "The Baker",
       "category": "scripted",
       "image": "https://assets.codepen.io/902426/baker-movie-image-chris-malanchen.webp",
@@ -88,16 +98,6 @@
       "description": "",
       "link": "",
       "order": 9,
-      "visible": true
-    },
-    {
-      "title": "RPM",
-      "category": "documentary",
-      "image": "https://assets.codepen.io/902426/Christopher-Malenchan-Movie_Portfolio-Item-RPM.jpg",
-      "alt": "RPM film or television poster",
-      "description": "",
-      "link": "",
-      "order": 10,
       "visible": true
     }
   ]
