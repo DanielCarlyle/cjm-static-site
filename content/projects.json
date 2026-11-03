@@ -1,23 +1,13 @@
 {
   "projects": [
     {
-      "title": "RPM",
-      "category": "documentary",
-      "image": "https://assets.codepen.io/902426/Christopher-Malenchan-Movie_Portfolio-Item-RPM.jpg",
-      "alt": "RPM film or television poster",
-      "description": "",
-      "link": "",
-      "order": 10,
-      "visible": true
-    },
-    {
       "title": "The Baker (Full Length)",
       "category": "scripted",
       "image": "https://assets.codepen.io/902426/baker-movie-image-chris-malanchen.webp",
       "alt": "The Baker film or television poster",
       "description": "",
       "link": "",
-      "order": 1,
+      "order": 2,
       "visible": true
     },
     {
@@ -27,7 +17,7 @@
       "alt": "Big Little Lies film or television poster",
       "description": "",
       "link": "",
-      "order": 2,
+      "order": 1,
       "visible": true
     },
     {
@@ -88,6 +78,16 @@
       "description": "",
       "link": "",
       "order": 8,
+      "visible": true
+    },
+    {
+      "title": "RPM",
+      "category": "documentary",
+      "image": "https://assets.codepen.io/902426/Christopher-Malenchan-Movie_Portfolio-Item-RPM.jpg",
+      "alt": "RPM film or television poster",
+      "description": "",
+      "link": "",
+      "order": 10,
       "visible": true
     },
     {
