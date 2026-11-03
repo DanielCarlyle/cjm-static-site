@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: cjm-static-site
   branch: main
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
