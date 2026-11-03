@@ -1,0 +1,36 @@
+{
+  "site_title": "CJM Films — Christopher John Malanchen",
+  "site_description": "Christopher John Malanchen is a film and television editor based in Toronto, Canada.",
+  "name": "Christopher John Malanchen",
+  "subtitle": "Editor, Film & Television",
+  "credentials": "DGC, Canadian Film Centre Editor Alumni",
+  "hero_mobile": "https://assets.codepen.io/902426/Chris-Malanchen-Website-Background-Image-Mobile.png",
+  "hero_desktop": "https://assets.codepen.io/902426/Chris-Malanchen-Website-Background-Image-Desktop-Landing-Page-Image.webp",
+  "reel_vimeo_id": "346738342",
+  "reel_heading": "Reel",
+  "work_heading": "Editing Work",
+  "directing_heading": "Director",
+  "about_heading": "About",
+  "contact_heading": "Contact",
+  "bio_paragraphs": [
+    "I am a professional film and television editor based in Toronto, Canada. As a freelance editor I work in several genres, including television, documentaries, short and feature films.",
+    "I enjoy collaborating with storytellers who have a unique voice and a passion for crafting captivating narratives."
+  ],
+  "portrait": "https://assets.codepen.io/902426/Christopher-Malenchan.jpg",
+  "cv_url": "https://assets.codepen.io/902426/CV-2024-CMALANCHEN-RESUME.pdf",
+  "award_images": [
+    "https://assets.codepen.io/902426/Christopher-Malanchen-CCE_Nominee_Laurels_2024_Black+.png",
+    "https://assets.codepen.io/902426/Christopher-Malanchen-WINNER-DOCLA-+2016.png"
+  ],
+  "contact_banner": "https://d33wubrfki0l68.cloudfront.net/dc9231a0f2bf9a138847e3923aedbee62c84f386/94aa7/img/connect-banner.jpg",
+  "email": "cjmalanchen@gmail.com",
+  "form_action": "https://formspree.io/mjvenrqb",
+  "instagram_url": "https://www.instagram.com/p/B8B_XlxALeS/",
+  "imdb_url": "https://www.imdb.com/name/nm3040932/?ref_=fn_al_nm_7",
+  "vimeo_url": "https://vimeo.com/cjm",
+  "linkedin_url": "https://www.linkedin.com/in/christopher-john-malanchen-21629353/",
+  "credit_name": "Daniel Carlyle",
+  "credit_url": "https://danielcarlyle.carbonmade.com",
+  "gtm_id": "GTM-KLKWNG9Z",
+  "canonical_url": "https://cjmfilms.com/"
+}

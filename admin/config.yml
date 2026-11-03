@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+site_url: https://cjmfilms.com
+publish: true
+collections:
+  - name: site
+    label: Website Content
+    files:
+      - name: settings
+        label: Site Settings and Page Content
+        file: content/settings.json
+        format: json
+        fields:
+          - {label: Browser Title, name: site_title, widget: string}
+          - {label: SEO Description, name: site_description, widget: text}
+          - {label: Full Name, name: name, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
+          - {label: Credentials, name: credentials, widget: string}
+          - {label: Desktop Hero Image, name: hero_desktop, widget: image}
+          - {label: Mobile Hero Image, name: hero_mobile, widget: image}
+          - {label: Reel Vimeo ID, name: reel_vimeo_id, widget: string}
+          - {label: Reel Heading, name: reel_heading, widget: string}
+          - {label: Work Heading, name: work_heading, widget: string}
+          - {label: Directing Heading, name: directing_heading, widget: string}
+          - {label: About Heading, name: about_heading, widget: string}
+          - {label: Contact Heading, name: contact_heading, widget: string}
+          - label: Biography Paragraphs
+            name: bio_paragraphs
+            widget: list
+            field: {label: Paragraph, name: paragraph, widget: text}
+          - {label: Portrait, name: portrait, widget: image}
+          - {label: CV Download URL, name: cv_url, widget: string}
+          - label: Award Images
+            name: award_images
+            widget: list
+            field: {label: Image, name: image, widget: image}
+          - {label: Contact Banner, name: contact_banner, widget: image}
+          - {label: Email, name: email, widget: string}
+          - {label: Formspree Form Action, name: form_action, widget: string}
+          - {label: Instagram URL, name: instagram_url, widget: string}
+          - {label: IMDb URL, name: imdb_url, widget: string}
+          - {label: Vimeo URL, name: vimeo_url, widget: string}
+          - {label: LinkedIn URL, name: linkedin_url, widget: string}
+          - {label: Credit Name, name: credit_name, widget: string}
+          - {label: Credit URL, name: credit_url, widget: string}
+          - {label: Google Tag Manager ID, name: gtm_id, widget: string, required: false}
+          - {label: Canonical URL, name: canonical_url, widget: string}
+      - name: projects
+        label: Editing Portfolio
+        file: content/projects.json
+        format: json
+        fields:
+          - label: Projects
+            name: projects
+            widget: list
+            summary: '{{fields.title}} — {{fields.category}}'
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Category, name: category, widget: select, options: [scripted, documentary]}
+              - {label: Poster Image, name: image, widget: image}
+              - {label: Image Alt Text, name: alt, widget: string}
+              - {label: Description, name: description, widget: text, required: false}
+              - {label: Project Link, name: link, widget: string, required: false}
+              - {label: Order, name: order, widget: number, value_type: int}
+              - {label: Visible, name: visible, widget: boolean, default: true}
+      - name: videos
+        label: Directing Videos
+        file: content/videos.json
+        format: json
+        fields:
+          - label: Videos
+            name: videos
+            widget: list
+            summary: '{{fields.title}}'
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Group, name: category, widget: select, options: ['Short Films', 'Music Videos', 'Graphic Work']}
+              - {label: Vimeo Video ID, name: vimeo_id, widget: string}
+              - {label: Start Time in Seconds, name: start_at, widget: number, value_type: int, default: 0}
+              - {label: Order, name: order, widget: number, value_type: int}
+              - {label: Visible, name: visible, widget: boolean, default: true}
