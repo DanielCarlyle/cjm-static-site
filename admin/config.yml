@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: cjm-static-site
+  repo: DanielCarlyle/cjm-static-site
   branch: main
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
