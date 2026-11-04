@@ -111,3 +111,34 @@
     transform: none;
   }
 }
+
+/* Larger email and social media icons */
+
+.icon-link {
+  width: 56px;
+  height: 56px;
+  font-size: 32px;
+}
+
+/* Ensure Font Awesome icons inherit the size */
+.icon-link i {
+  font-size: inherit;
+}
+
+/* Footer icon spacing */
+.footer-socials {
+  gap: 24px;
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .icon-link {
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+  }
+
+  .footer-socials {
+    gap: 16px;
+  }
+}
