@@ -64,64 +64,38 @@
 
 /* Footer social icons */
 
+/* Larger icons with tighter spacing */
+
 .footer-socials {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 8px;
 }
 
-/* Shared email and social icon styles */
-
-.icon-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 44px;
+.footer-socials .icon-link {
+  width: 40px;
   height: 44px;
-
-  font-size: 42px;
-  color: #202020;
-  text-decoration: none;
-
-  transition:
-    color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.icon-link:hover {
-  color: #83d0cf;
-  transform: translateY(-3px);
-}
-
-.icon-link:focus-visible {
-  outline: 2px solid #83d0cf;
-  outline-offset: 3px;
-  border-radius: 4px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .icon-link {
-    transition: none;
-  }
-
-  .icon-link:hover {
-    transform: none;
-  }
-}
-
-/* Larger email and social media icons */
-
-.icon-link {
-  width: 56px;
-  height: 56px;
+  padding: 0;
+  margin: 0;
   font-size: 32px;
 }
 
-/* Ensure Font Awesome icons inherit the size */
-.icon-link i {
+.footer-socials .icon-link i {
   font-size: inherit;
 }
+
+/* Mobile */
+@media (max-width: 575px) {
+  .footer-socials {
+    gap: 6px;
+  }
+
+  .footer-socials .icon-link {
+    width: 38px;
+    height: 44px;
+    font-size: 28px;
+  }
+}
+
 
