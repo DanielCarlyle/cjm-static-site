@@ -42,3 +42,22 @@
   }
 }
 
+
+
+/* Full-width responsive container */
+.container-fluid {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+/* Optional: edge-to-edge container */
+.container-fluid.no-gutters {
+  padding-left: 0;
+  padding-right: 0;
+}
+
