@@ -17,13 +17,14 @@
   text-transform: capitalize;
   margin-top: 5px;
 
-  /* Original teal-to-black gradient */
+  /* Original teal-to-black gradient
   background-color: #1a1d1d;
   background-image: linear-gradient(
     75deg,
     #83d0cf,
     #0e0f10
   );
+   */
   background-size: 100%;
   background-repeat: no-repeat;
 
