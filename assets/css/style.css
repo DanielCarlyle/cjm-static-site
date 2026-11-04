@@ -206,3 +206,6 @@
   }
 }
 
+.gallery-item[hidden] {
+  display: none !important;
+}
