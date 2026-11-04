@@ -8,7 +8,7 @@ Run `python3 scripts/build.py` then `python3 -m http.server 8000` and open `http
 
 ## Edit content
 
-Content lives in `content/settings.json`, `content/projects.json`, and `content/videos.json`. Running `python3 scripts/build.py` regenerates `index.html`. These JSON files are the source of truth: do not hand-edit the generated HTML.
+Content lives in `content/settings.json`, `content/projects.json`, and `content/videos.json`. These JSON files are the source of truth: do not hand-edit the generated HTML.
 
 ## Enable Decap CMS
 
