@@ -60,7 +60,16 @@ collections:
             summary: '{{fields.title}} — {{fields.category}}'
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Category, name: category, widget: select, options: [scripted, documentary]}
+              # Editing Work Categories
+              - label: Categories
+                name: category
+                widget: select
+                multiple: true
+                options:
+                  - {label: Scripted, value: scripted}
+                  - {label: Documentary, value: documentary}
+                  - {label: VFX Editor, value: vfx-editor}
+                  - {label: Trailer Editor, value: trailer-editor}
               - {label: Poster Image, name: image, widget: image}
               - {label: Image Alt Text, name: alt, widget: string}
               - {label: Description, name: description, widget: text, required: false}
