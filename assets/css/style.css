@@ -164,17 +164,45 @@
   }
 }
 
-.instagram-embed {
-  width: 100%;
-  max-width: 540px;
-  margin: 0 auto;
+
+/* Instagram profile */
+
+.instagram-profile {
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.instagram-embed iframe {
-  display: block;
-  width: 100%;
-  min-height: 600px;
-  border: 0;
-  border-radius: 3px;
+.instagram-profile h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.instagram-profile-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #212529;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.instagram-profile-link i {
+  font-size: 32px;
+}
+
+.instagram-profile-link:hover,
+.instagram-profile-link:focus-visible {
+  color: #44318b;
+}
+
+@media (max-width: 575px) {
+  .instagram-profile {
+    padding: 25px 10px;
+  }
 }
 
