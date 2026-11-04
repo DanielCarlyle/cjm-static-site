@@ -163,3 +163,22 @@
     transition: none;
   }
 }
+
+
+
+/* Instagram embed inside Contact section */
+.instagram-embed {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.instagram-embed .instagram-media {
+  width: 100% !important;
+  max-width: 540px !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+}
+
